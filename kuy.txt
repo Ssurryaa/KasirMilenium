@@ -30,7 +30,7 @@ int main(){
     printf("\t\t\t       Jalan Kenangan dan Harapan No.69, Zimbabwe\n");
     printf("\t\t\t\t     Contact Person : 089888118231\n");
 
-    kategori1:
+    kategori:
     printf("\n\n -- Kategori Pesanan --\n\n");
     printf("=========================\n");
     printf("|  No |     Kategori    |\n");
@@ -55,7 +55,7 @@ int main(){
         printf("|  5  | Nasi Ayam\t| 9000    |\n");
         printf("===================================\n");
 
-        makanan1:
+        makanan:
         printf("Masukkan Pesanan Anda (1-5) : ");
         scanf("%d", &makanan);
 
@@ -99,7 +99,7 @@ int main(){
             default:
                     printf(" Error..!!!, Menu no.%d tidak ada dalam daftar\n", makanan);
                     printf(" ==> Silakan input kembali\n");
-                    goto makanan1;
+                    goto makanan;
         }
     }
     else if(pilihan == 2){
@@ -115,7 +115,7 @@ int main(){
         printf("|  5  | Es Buah \t| 5000    |\n");
         printf("===================================\n");
 
-        minuman1:
+        minuman:
         printf("Masukkan Pesanan Anda (1-5) : ");
         scanf("%d", &minuman);
 
@@ -159,7 +159,7 @@ int main(){
             default:
                 printf(" Error..!!!, Menu no.%d tidak ada dalam daftar\n", minuman);
                 printf(" ==> Silakan input kembali\n");
-                goto minuman1;
+                goto minuman;
         }
 
     }
@@ -175,7 +175,7 @@ int main(){
         printf("|  4  | Tempe Bacem\t| 5000    |\n");
         printf("|  5  | Perkedel\t| 5000    |\n");
         printf("===================================\n");
-        cemilan1:
+        cemilan:
         printf("Masukkan Pesanan Anda (1-5) : ");
         scanf("%d", &cemilan);
 
@@ -219,7 +219,7 @@ int main(){
             default:
                 printf(" Error..!!!, Menu no.%d tidak ada dalam daftar\n", cemilan);
                 printf(" ==> Silakan input kembali\n");
-                goto cemilan1;
+                goto cemilan;
         }
     }
     else{
@@ -227,7 +227,7 @@ int main(){
         printf("-Input yang Anda Masukkan Salah-\n");
         printf("================================\n");
         printf(" ==> Silakan input kembali\n");
-        goto kategori1;
+        goto kategori;
     }
 
     printf("\nIngin Memesan Lagi?\n");
@@ -236,7 +236,7 @@ int main(){
     scanf("%d",&lagi);
 
     if(lagi==1){
-        goto kategori1;
+        goto kategori;
     }else{
         goto hasil;
     }
@@ -315,7 +315,7 @@ int main(){
     if(pesan==1){
         goto total;
     }else{
-        goto kategori1;
+        goto kategori;
     }
 
     total :
